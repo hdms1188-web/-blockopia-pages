@@ -1,0 +1,277 @@
+===== RESOURCE-SOURCES.txt =====
+
+ブロピア！ Blockopia v8 — resource sources / attribution
+
+Game logic, world generation, browser controls, voxel rendering integration,
+inventory implementation and reconstructed 3D rigs: Blockopia project
+(previous releases were named BLOCKWILD).
+
+Minecraft reference artwork
+----------------------------------------
+Primary reference version: Minecraft Java Edition 1.12.2
+Supplemental Warden texture: Minecraft Java Edition 1.19
+https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.19/assets/minecraft/textures/entity/warden/warden.png
+Warden body proportions and skin-layout reference:
+https://github.com/mahtomedi/minecraft/blob/main/src/main/java/net/minecraft/client/model/WardenModel.java
+Reference Java source is not included in the game package.
+Minecraft textures and GUI artwork: Mojang Studios / Microsoft.
+These assets are not covered by the Three.js MIT license.
+Blockopia is an unofficial browser game and is not an official Minecraft release.
+
+Public version manifest used to locate the reference client:
+https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+Reference client URL:
+https://piston-data.mojang.com/v1/objects/0f275bc1547d01fa5f56ba34bdc87d981ee12daf/client.jar
+Verified reference client SHA-1:
+0f275bc1547d01fa5f56ba34bdc87d981ee12daf
+
+Selected block, item, entity and GUI PNG resources from
+assets/minecraft/textures/ are embedded as data URLs in index.html.
+Small icon/color/cuboid adaptations are generated from those PNGs.
+The reference JAR, Minecraft Java bytecode and the original game client
+are not included in this package.
+
+Visual research pages and images consulted:
+https://ja.minecraft.wiki/w/ブロック
+https://minecraft.wiki/w/Template%3AInventory
+https://minecraft.wiki/w/Template%3AInventory/Old/doc
+https://minecraft.wiki/w/Tutorial%3ABeginner%27s_guide
+https://minecraft.fandom.com/wiki/Crafting
+https://fr-minecraft.net/news-minecraft-2061-la-release-1-12-est-disponible.html
+https://upload.fr-minecraft.net/images/frminecraft/fr-minecraft_DXDP_2017-03-31-04-48-37.png
+https://i.imgur.com/Q65qb67.png
+These research screenshots are not included as game textures.
+
+Sound reference assets
+----------------------------------------
+Selected Minecraft Java Edition 1.12 sound effects: Mojang Studios / Microsoft.
+113 selected resources are converted from OGG to MP3 for browser compatibility
+and embedded in index.html. Each original OGG download was checked against
+its asset-index SHA-1 before conversion. MP3 encoding: 128 kbps / 44.1 kHz.
+Asset-index source:
+https://piston-meta.mojang.com/v1/packages/a21e1ded1a24ea1548dd8db0cf30b6acb02655a9/1.12.json
+Asset files:
+https://resources.download.minecraft.net/<first-two-hash-characters>/<sha1>
+Additional v8 effects include attack, anvil, enchantment, advancement,
+ender-eye insertion, End portal opening and Nether portal travel cues.
+End music: music/game/end/boss and music/game/end/credits (120-second
+excerpts with fades, MP3 128 kbps). Original audio files were SHA-1 verified.
+See minecraft-audio-v8.json for the additional paths and hashes.
+These resources are not covered by the Three.js MIT license.
+
+User-provided material
+----------------------------------------
+Blockopia logo: user-provided image, background removed to transparent PNG.
+The lettering and colors follow the provided logo.
+Exploration music: user-provided quiet_exploration_careful_v3.mp3
+(approximately 64 seconds), embedded as looping background music.
+
+Three.js
+----------------------------------------
+Three.js is bundled into index.html for offline operation.
+Copyright and MIT license: see Threejs-MIT.txt.
+
+Netherite textures added in v9
+----------------------------------------
+Minecraft Java Edition 1.16.5 / Mojang Studios / Microsoft.
+Unmodified tool, item armor, and player armor textures, embedded for offline use.
+Source mirror: https://github.com/InventivetalentDev/minecraft-assets/tree/1.16.5/assets/minecraft/textures
+See netherite-textures-v9.json for individual source URLs and SHA-256 hashes.
+
+
+===== Threejs-MIT.txt =====
+
+The MIT License
+
+Copyright © 2010-2025 three.js authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+===== minecraft-audio-v8.json =====
+
+{
+  "block/end_portal/endportal": {
+    "hash": "bebfd40c216a3ad53a6d5b1b90b8ce1335b53310",
+    "size": 69852
+  },
+  "block/end_portal/eyeplace1": {
+    "hash": "d9b6703a5dcaaa4c62358d4d7372f8314941e891",
+    "size": 12211
+  },
+  "block/end_portal/eyeplace2": {
+    "hash": "1b256a2a6b360fd2f2858cf1a42c4ca4917a1de1",
+    "size": 13533
+  },
+  "block/end_portal/eyeplace3": {
+    "hash": "c92f79879a1a8c2a5487bc29b87896297f4dccc4",
+    "size": 14092
+  },
+  "entity/player/attack/crit1": {
+    "hash": "509656b6d02a4491f46c686e66b615950c6c1408",
+    "size": 8223
+  },
+  "entity/player/attack/strong1": {
+    "hash": "d7067e204913cf9631bfbb7340102f6de75c2dfc",
+    "size": 5194
+  },
+  "entity/player/attack/weak1": {
+    "hash": "f26ab58dc70ce7a3f4d16b5bb31620894b0b8812",
+    "size": 4337
+  },
+  "entity/player/attack/sweep1": {
+    "hash": "fd20e1cd8c69bc2f037de950b078a729a4b7d6a6",
+    "size": 5546
+  },
+  "entity/player/attack/knockback1": {
+    "hash": "08626fc2a337c28b5dfdafb6daa9ea31f9a70571",
+    "size": 8148
+  },
+  "block/enchantment_table/enchant1": {
+    "hash": "f05f55328f2b98b3c7d881fcdef7e7964d8082fa",
+    "size": 14984
+  },
+  "ui/toast/challenge_complete": {
+    "hash": "210c839d6fab655373b3a5e4c278f59dff4936d8",
+    "size": 91536
+  },
+  "ui/toast/in": {
+    "hash": "1bdb9e214a7833b794b1b4b97796d9f9af12bca5",
+    "size": 20040
+  },
+  "ui/toast/out": {
+    "hash": "167a4f93c12d2d03d9ce266b8cb67065281bd218",
+    "size": 19939
+  },
+  "random/anvil_use": {
+    "hash": "88a792430dfff97582ab49b8dc9477cd9d4e5ebb",
+    "size": 13633
+  },
+  "random/anvil_land": {
+    "hash": "934b16e82b94d5790175615303594f0ec28da4a0",
+    "size": 9210
+  },
+  "random/anvil_break": {
+    "hash": "705a155201cc388a0c0c6f7435ddbc0fcc56b5f2",
+    "size": 13741
+  },
+  "music/game/end/boss": {
+    "hash": "b9eef13c2337a6335c4523858619ca560dff4496",
+    "size": 3329788
+  },
+  "music/game/end/credits": {
+    "hash": "27fcacc68bb77f01b23ea9c9d36d9018f8509cdf",
+    "size": 6065908
+  },
+  "portal/trigger": {
+    "hash": "301f32642b654addbd06a430768fead464fd24c4",
+    "size": 24992
+  },
+  "portal/travel": {
+    "hash": "43388701fac432a567fe9fec421521e6348ad780",
+    "size": 54283
+  }
+}
+
+===== netherite-textures-v9.json =====
+
+[
+  {
+    "path": "item/netherite_sword.png",
+    "url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.16.5/assets/minecraft/textures/item/netherite_sword.png",
+    "bytes": 210,
+    "sha256": "8293e5f33847659e2910fe998651aff3fb8b1806307047ba5dbb987243d27fac"
+  },
+  {
+    "path": "item/netherite_pickaxe.png",
+    "url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.16.5/assets/minecraft/textures/item/netherite_pickaxe.png",
+    "bytes": 188,
+    "sha256": "d1c1bab69b30a5a36d5c8229fd2ac7c0f3a970e4a9845d4c25e1179b3f50195a"
+  },
+  {
+    "path": "item/netherite_axe.png",
+    "url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.16.5/assets/minecraft/textures/item/netherite_axe.png",
+    "bytes": 184,
+    "sha256": "aa1c6ff73e24c7a6fd06bc3ae59b4961ffd08d22fb51b7e2b93678ce82d5a1aa"
+  },
+  {
+    "path": "item/netherite_shovel.png",
+    "url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.16.5/assets/minecraft/textures/item/netherite_shovel.png",
+    "bytes": 161,
+    "sha256": "53bdac629511db4ef375325f069e84cf9eecec7a08585b7f82477e66bfe9bd9b"
+  },
+  {
+    "path": "item/netherite_hoe.png",
+    "url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.16.5/assets/minecraft/textures/item/netherite_hoe.png",
+    "bytes": 167,
+    "sha256": "d0ce0f1fd989c8ce408b9db865ada6b89bcb4632aa0b5ca595096fe7b74961fd"
+  },
+  {
+    "path": "item/netherite_helmet.png",
+    "url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.16.5/assets/minecraft/textures/item/netherite_helmet.png",
+    "bytes": 162,
+    "sha256": "79117a0656e4cd53950ad25aaa073991db83e65be3363de5c1f899b959912d61"
+  },
+  {
+    "path": "item/netherite_chestplate.png",
+    "url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.16.5/assets/minecraft/textures/item/netherite_chestplate.png",
+    "bytes": 244,
+    "sha256": "93728dc0e2bb1cd6bd9c788168766b4464185f43d1b31c106914d32d3e56fb89"
+  },
+  {
+    "path": "item/netherite_leggings.png",
+    "url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.16.5/assets/minecraft/textures/item/netherite_leggings.png",
+    "bytes": 176,
+    "sha256": "1f34156db7767c3deca47832b285c5c07d83088bb163d6f8f5d2dfc7d9c94a5f"
+  },
+  {
+    "path": "item/netherite_boots.png",
+    "url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.16.5/assets/minecraft/textures/item/netherite_boots.png",
+    "bytes": 173,
+    "sha256": "165f358064a52c31bccc0d60475f58ed9e07e8cc8f8e6d7476d605a743c87869"
+  },
+  {
+    "path": "models/armor/netherite_layer_1.png",
+    "url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.16.5/assets/minecraft/textures/models/armor/netherite_layer_1.png",
+    "bytes": 641,
+    "sha256": "1ad07847f1d545f9d131c239c855b6e6144d8fd8ce24a91af28d284e59cf557a"
+  },
+  {
+    "path": "models/armor/netherite_layer_2.png",
+    "url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.16.5/assets/minecraft/textures/models/armor/netherite_layer_2.png",
+    "bytes": 331,
+    "sha256": "3d06c32921702d8da7a05fcb87b8dfdf07117158296763122bfba2a2083db34e"
+  }
+]
+
+===== victory-music-v11.json =====
+
+{
+  "title": "その先の世界へ / Beyond the Last Island",
+  "duration": 124,
+  "sampleRate": 32000,
+  "channels": 2,
+  "composition": "Original v11 orchestral synthesis: strings, brass, choir, bells, low strings, timpani and cymbals. No external samples.",
+  "bpm": 96,
+  "seed": 611,
+  "mastering": "EBU R128 -18 LUFS / -1.5 dBTP",
+  "preMasterPeak": 0.427076131105423,
+  "preMasterRMS": 0.06322789937257767,
+  "mp3SHA256": "21b19e7e790d38c0e06796360698867ef21b4b34117a384980d9464aef5aba99"
+}
