@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS rta_records (
+  id TEXT PRIMARY KEY,
+  name TEXT NOT NULL,
+  time_ms INTEGER NOT NULL CHECK (time_ms BETWEEN 60000 AND 604800000),
+  seed INTEGER NOT NULL,
+  finished_at INTEGER NOT NULL,
+  version INTEGER NOT NULL DEFAULT 1,
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_rta_records_time
+ON rta_records (time_ms ASC, finished_at ASC);
